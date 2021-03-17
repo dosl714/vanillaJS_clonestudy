@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <script src="clock.js"></script>
+    <p>setInterval()<br>
+        첫번째 인자로 실행할 함수를 받는다, <br>
+        두번쨰 인자로 함수를 실행하고 싶은 시간을 입력(시간은 밀리세컨이기떄문에 1초  = 1000으로 입력)<br>
+    </p>
+    <p>
+        삼항 연산자 (ternary operator) 혹은 작은 if <br>
+        ${seconds <10 ? `0${seconds}`:seconds} ;<br>
+        ->이걸 해석 해보면  seconds는 초를 가져오는 명령어임 <br>
+        근데 초가 10보다 작은가 ? 라고 묻는건데(${seconds <10 ? ), <br>
+        작다면 ( true라면) 앞에 0을 붙여서 초를 가져오고 (`0${seconds}`) <br>
+        그렇지 않을 경우 (false라면) 초를 가져와라(:seconds)<br>
+    </p>
+    </body>
+</html>
